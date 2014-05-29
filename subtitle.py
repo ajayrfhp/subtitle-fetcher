@@ -3,7 +3,8 @@ import urllib
 import os
 import hashlib
 
-user_agent='SubDB/1.0 (Pyrrot/0.1; http://github.com/jrhames/pyrrot-cli)'
+
+user_agent='SubDB/1.0 (ajayrfhp/0.1; https://github.com/ajayrfhp/experiments-with-python--D)'
 moviename="Fight Club 1999 BRrip 720p x264 [Herakler].mkv"
 language='en'
 action='download'
