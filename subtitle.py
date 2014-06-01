@@ -2,18 +2,14 @@ import urllib2
 import urllib
 import os
 import hashlib
-
+import sys
 
 user_agent='SubDB/1.0 (ajayrfhp/0.1; https://github.com/ajayrfhp/experiments-with-python--D)'
-moviename="Fight Club 1999 BRrip 720p x264 [Herakler].mkv"
+moviename=sys.argv[1]
 language='en'
 action='download'
 base_url='http://api.thesubdb.com/?'
-
-
-
 def get_hash(name):
-
     readsize = 64 * 1024
     with open(name, 'rb') as f:
         size = os.path.getsize(name)
@@ -27,13 +23,8 @@ content={
 		'action':action,
 		'hash':hashed,
 		'language':language,
-		}
- 
-
-
+		} 
 url=base_url+urllib.urlencode(content)
-
-
 #url='http://api.thesubdb.com/?action=download&hash=edc1981d6459c6111fe36205b4aff6c2&language=pt,en'
 
 req=urllib2.Request(url)
@@ -47,7 +38,7 @@ subtitles=res.read()
 
 #print subtitles
 
-index=moviename.index('.')
+index=moviename.rfind('.')
 
 file_name=moviename[0:index]+'.srt'
 
@@ -62,6 +53,3 @@ try:
 	print 'success'
 except:
 	print 'failure'
-
-
-
