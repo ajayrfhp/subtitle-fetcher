@@ -1,14 +1,11 @@
-experiments-with-python--D
+subtitle-downloader
 ==========================
 
-use python script.py absolute path
+# Installation
 
-file gets downloaded in the absolute path
+* Download repo
+* Run `python setup.py install`
 
-EXAMPLE:
+# Usage
 
-python subtitle2.py /home/ajay/Desktop/learning\ node/arrow.212.hdtv-lol.mp4
-
-name of subtitle would be arrow.212.hdtv-lol.srt and location would be
-/home/ajay/Desktop/learning\ node/arrow.212.hdtv-lol.srt
-
+`subtitle-downloader path/to/vid/file`
