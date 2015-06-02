@@ -15,7 +15,8 @@ def get_hash(name):
 
 def main():
     user_agent = 'SubDB/1.0 (ajayrfhp/0.1; https://github.com/ajayrfhp/experiments-with-python--D)'
-    moviename = sys.argv[1]
+    movie_path = sys.argv[1]
+    moviename = os.path.join(os.getcwd(), movie_path)
     language = 'en'
     action = 'download'
     base_url = 'http://api.thesubdb.com/?'
