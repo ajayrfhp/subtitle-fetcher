@@ -8,7 +8,7 @@ setup(name = 'subtitle-fetcher',
       author_email = 'ajayrfhp1710@gmail.com',
       packages = ['subtitle_downloader'],
       entry_points = {
-          'console_scripts': ['subtitle-fetcher=subtitle_downloader:main'],
+          'console_scripts': ['subtitle-fetcher=subtitle_fetcher:main'],
       },
       url = 'https://github.com/ajayrfhp/subtitle-fetcher/',
       keywords = ['subtitle', 'download', 'utility', 'movie'],
