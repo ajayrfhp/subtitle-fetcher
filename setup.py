@@ -6,7 +6,7 @@ setup(name = 'subtitle-fetcher',
       version = '0.1.0',
       author = 'Ajay Prasadh V',
       author_email = 'ajayrfhp1710@gmail.com',
-      packages = ['subtitle_downloader'],
+      packages = ['subtitle_fetcher'],
       entry_points = {
           'console_scripts': ['subtitle-fetcher=subtitle_fetcher:main'],
       },

@@ -36,6 +36,6 @@ def main():
 
     index = moviename.rfind('.')
     file_name = moviename[0:index] + '.srt'
-    print file_name
     with open(file_name, 'w') as f:
         f.write(subtitles)
+    print "Downloaded!"
